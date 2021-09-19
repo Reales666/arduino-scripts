@@ -1,9 +1,6 @@
 const int redLedPin = 8;
 const int greenLedPin = 7;
 const int sensorPin = 12;
-const int buzzerPin = 6;
-
-cont int buzzerNote = 330;
 
 const long detectionThreshold = 600;
 
@@ -22,7 +19,6 @@ void setup() {
 
   digitalWrite(greenLedPin, HIGH);
   digitalWrite(redLedPin, LOW); 
-  noTone(buzzerPin);
 }
 
 void loop() {
@@ -67,7 +63,6 @@ void loop() {
       if(detectionPeriod > detectionThreshold) {
         digitalWrite(greenLedPin, LOW);
         digitalWrite(redLedPin, HIGH); 
-        tone(buzzerPin, buzzerNote);
 
         Serial.print("Car detected");
         Serial.println(detectionPeriod);
@@ -75,8 +70,6 @@ void loop() {
     } else {
       digitalWrite(greenLedPin, HIGH);
       digitalWrite(redLedPin, LOW); 
-      digitalWrite(buzzerPin, LOW);
-      noTone(buzzerPin);
       
       isDetected = false;
     }
