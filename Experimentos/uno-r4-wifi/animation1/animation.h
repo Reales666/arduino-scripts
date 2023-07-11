@@ -1,0 +1,149 @@
+const uint32_t frame1[] = {
+  0xc00c0000,
+  0x0,
+  0x0
+};
+
+const uint32_t frame2[] = {
+		0x60060,
+		0x0,
+		0x0
+};
+
+const uint32_t frame3[] = {
+		0x30,
+		0x3000000,
+		0x0
+};
+
+const uint32_t frame4[] = {
+		0x0,
+		0x1801800,
+		0x0
+};
+
+const uint32_t frame5[] = {
+		0x0,
+		0xc00,
+		0xc0000000
+};
+
+const uint32_t frame6[] = {
+		0x0,
+		0x0,
+		0x60060000
+};
+
+const uint32_t frame7[] = {
+		0x0,
+		0x0,
+		0x30030
+};
+
+const uint32_t frame8[] = {
+		0x0,
+		0x0,
+		0x18018000
+};
+
+const uint32_t frame9[] = {
+		0x0,
+		0xc0,
+		0xc000000
+};
+
+const uint32_t frame10[] = {
+		0x0,
+		0x60060,
+		0x0
+};
+
+const uint32_t frame11[] = {
+		0x0,
+		0x30030000,
+		0x0
+};
+
+const uint32_t frame12[] = {
+		0x600,
+		0x60000000,
+		0x0
+};
+
+const uint32_t frame13[] = {
+		0xc00c00,
+		0x0,
+		0x0
+};
+
+const uint32_t frame14[] = {
+		0x1801,
+		0x80000000,
+		0x0
+};
+
+const uint32_t frame15[] = {
+		0x3,
+		0x300000,
+		0x0
+};
+
+const uint32_t frame16[] = {
+		0x0,
+		0x600600,
+		0x0
+};
+
+const uint32_t frame17[] = {
+		0x0,
+		0xc00,
+		0xc0000000
+};
+
+const uint32_t frame18[] = {
+		0x0,
+		0x1,
+		0x80180000
+};
+
+const uint32_t frame19[] = {
+		0x0,
+		0x0,
+		0x300300
+};
+
+const uint32_t frame20[] = {
+		0x0,
+		0x6,
+		0x600000
+};
+
+const uint32_t frame21[] = {
+		0x0,
+		0xc00c,
+		0x0
+};
+
+const uint32_t frame22[] = {
+		0x0,
+		0x6006000,
+		0x0
+};
+
+const uint32_t frame23[] = {
+		0x30,
+		0x3000000,
+		0x0
+};
+
+const uint32_t frame24[] = {
+		0x30030,
+		0x0,
+		0x0
+};
+
+const uint32_t frame25[] = {
+		0x18018000,
+		0x0,
+		0x0
+};
