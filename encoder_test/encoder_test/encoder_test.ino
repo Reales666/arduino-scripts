@@ -13,6 +13,7 @@
  int contador = 0; 
  int estadoA;
  int estadoPrevioA;  
+ 
  void setup() { 
    pinMode (salidaA,INPUT); // pin 2 
    pinMode (salidaB,INPUT); // pin 3
