@@ -20,7 +20,7 @@
    // el pulsador debe ser polarizado a valor ALTO
    pinMode (boton, INPUT_PULLUP);
    
-   Serial.begin (115200);
+   Serial.begin (9600);
    // Lee el estado inicial de la salida A
    estadoPrevioA = digitalRead(salidaA);   
  } 
