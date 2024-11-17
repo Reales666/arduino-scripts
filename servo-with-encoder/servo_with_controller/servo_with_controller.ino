@@ -2,14 +2,14 @@
  This sketch shows how to control a 180º servo with a encoder.
 */
 
-#include <Servo.h>
+
 
 // Servo configuration
 int SERVO_PIN = 9;
 Servo myServo;
 
-int servo_angle = 0;
-int prev_servo_angle = 0;
+int servo_angle;
+int prev_servo_angle;
 
 // Encoder configuration
 #define encoder_output_a 2
@@ -21,11 +21,13 @@ int prev_state_a;
 
 void setup() {
   // Initialize serial comm
-  Serial.begin(115200);
+  Serial.begin(9600);
   Serial.setTimeout(1);
 
   // Initialize servo
   myServo.attach(SERVO_PIN);
+  servo_angle = 0;
+  prev_servo_angle = 0;
 
   // Shows the servo movement range and leave it on the initial position
   myServo.write(0);
@@ -42,6 +44,7 @@ void setup() {
   pinMode (encoder_switch, INPUT_PULLUP);
   // Read the initial stastus of the encoder
   state_a = digitalRead(encoder_output_a);
+  prev_state_a = state_a;
 }
 
 void loop() {
